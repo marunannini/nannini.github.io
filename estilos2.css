@@ -1,0 +1,295 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    font-family: "Lato",sans-serif;
+    font-size: 10px;
+    padding: 10px;
+}
+
+.logo{
+    float: left;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.navegacionPrincipal a{
+    text-decoration: none;
+    color: #ecb0da;
+}
+
+li{
+    display:inline-block;
+}
+
+.navegacionPrincipal{
+    float: right;
+}
+
+
+.imagenPrincipal{
+    background-image: url(imagenes/01-091422-INTL-Homepage-Costume.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    /*overflow: hidden;*/
+}
+
+.imagenPrincipal h1{
+    font-size: 30px;
+    color: white;
+    position: relative;
+    font-family: 'Sacramento', cursive;
+    padding-top: 450px;
+    padding-left: 50px;
+    animation-name: aparecer;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.informacion{
+    height: auto;
+    width: 100%;
+    color: #ecb0da;
+    text-align: center;
+}
+
+.item{
+    padding: 10px;
+}
+
+p{
+    color: #ecb0da;
+    font-family: "Lato",sans-serif;
+    font-size: 15px;
+}
+
+.navegacionProductos{
+    background-color: #ecb0da;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navegacionProductos a{
+    color: white;
+    font-family: "Lato",sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.productosDestacados{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,300px);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.conjuntos{
+    background-image: url(Imagenes/Conjuntos.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+}
+
+.pijamas{
+    background-image: url(Imagenes/Pijamas.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+}
+
+.bombachas{
+    background-image: url(Imagenes/Bombachas.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+}
+
+.trajesBano{
+    background-image: url(Imagenes/Trajes\ de\ baño.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+}
+
+footer{
+    top:10px;
+    background-color: #ecb0da;
+    height: 70px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer h2{
+    font-family: "Lato",sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.redesSociales{
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding: 5px;
+    color: white;
+}
+
+h1{
+    font-family: "Lato",sans-serif;
+    font-size: 35px;
+    color: #7c7c7e;
+    text-align: center;
+}
+
+.datosContacto{
+    height: auto;
+    width: 100%;
+    color: #ecb0da;
+    text-align: center;
+}
+
+.informacionContacto h2{
+    font-family: "Lato",sans-serif;
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    color: #7c7c7e;
+}
+
+.informacionContacto p{
+    color: #ecb0da;
+    font-family: "Lato",sans-serif;
+    font-size: 15px;
+    padding:5px;
+}
+.formulario{
+    height: 430px;
+}
+
+.formulario h2{
+    font-family: "Lato",sans-serif;
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    color: #7c7c7e;
+}
+
+.formulario input{
+    position:relative;
+    justify-items: center;
+    transition: all 2s;
+    color:#7c7c7e;
+}
+
+.formulario input:focus{
+    font-size:30px;
+    border:5px;
+}
+
+.enviar{
+    font-family: "Lato",sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    color:#7c7c7e;
+}
+
+@media only screen and (min-width:480px){
+    .productosDestacados{
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2,300px);
+        grid-gap: 10px;
+    }
+@media only screen and (min-width:768px){
+    header{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .imagenPrincipal h1{
+        font-size: 80px;
+    
+    }
+    .informacion{
+        height: auto;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px;
+    }
+    .navegacionProductos a{
+        color: white;
+        font-family: "Lato",sans-serif;
+        font-size: 25px;
+        text-decoration: none;
+    }
+    .productosDestacados{
+        height:340px;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 300px);
+        grid-gap:15px;
+    }
+
+.tabla{
+        border: double 5px #ecb0da;
+        font-family: "Lato",sans-serif;
+        font-size: 20px;
+        color:#7c7c7e;
+        position: relative;
+        justify-content: center;
+}
+    
+.tabla th{
+        padding: 20px;
+}
+    
+.tabla td{
+        padding: 15px;
+}
+.productos{
+    background-image: url(imagenes/091322-hp-532panties-desktop.jpg);
+    height: 85vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.productos h1{
+    font-size: 80px;
+    color: white;
+    position: relative;
+    font-family: 'Sacramento', cursive;
+    padding-top: 400px;
+    padding-left: 150px;
+}
+.comoComprar p{
+    font-family: "Lato",sans-serif;
+    font-size: 20px;
+    color:#7c7c7e;
+    padding: 10px;  
+}
+}
+}
