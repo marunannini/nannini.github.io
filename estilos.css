@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  padding-top: 10%;
+}
+
+.logo {
+  float: left;
+}
+
+ul {
+  list-style: none;
+}
+
+.navegacionPrincipal a {
+  text-decoration: none;
+  color: #ecb0da;
+}
+
+li {
+  display: inline-block;
+}
+
+.navegacionPrincipal {
+  float: right;
+}
+
+.imagenPrincipal {
+  background-image: url(imagenes/01-091422-INTL-Homepage-Costume.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  /*overflow: hidden;*/
+}
+
+.imagenPrincipal h1 {
+  font-size: 30px;
+  color: white;
+  position: relative;
+  font-family: "Sacramento", cursive;
+  padding-top: 450px;
+  padding-left: 50px;
+  animation-name: aparecer;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.informacion {
+  height: auto;
+  width: 100%;
+  color: #ecb0da;
+  text-align: center;
+}
+
+.item {
+  padding: 10px;
+}
+
+p {
+  color: #ecb0da;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+}
+
+.navegacionProductos {
+  background-color: #ecb0da;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.navegacionProductos a {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.productosDestacados {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 300px);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.conjuntos {
+  background-image: url("Imagenes/conjuntos.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+  filter: grayscale(100%);
+}
+
+.pijamas {
+  background-image: url("Imagenes/pijamas.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+  filter: grayscale(100%);
+}
+
+.bombachas {
+  background-image: url("Imagenes/bombachas.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+  filter: grayscale(100%);
+}
+
+.trajesBano {
+  background-image: url("Imagenes/trajesBano.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+  filter: grayscale(100%);
+}
+
+.conjuntos:hover {
+  filter: grayscale(0%);
+}
+
+.pijamas:hover {
+  filter: grayscale(0%);
+}
+
+.bombachas:hover {
+  filter: grayscale(0%);
+}
+
+.trajesBano:hover {
+  filter: grayscale(0%);
+}
+
+footer {
+  top: 10px;
+  background-color: #ecb0da;
+  height: 70px;
+  padding: 10px;
+  text-align: center;
+}
+
+footer h2 {
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.redesSociales {
+  font-size: 20px;
+  letter-spacing: 5px;
+  padding: 5px;
+  color: white;
+}
+
+.titulo {
+  font-family: "Sacramento", cursive;
+  font-size: 50px;
+  color: #7c7c7e;
+  text-align: center;
+}
+
+hr {
+  color: #ecb0da;
+  background-color: #ecb0da;
+}
+
+.cright {
+  height: 520px;
+}
+
+.cright input {
+  position: relative;
+  justify-items: center;
+  color: #7c7c7e;
+  width: 280px;
+}
+
+.cright input, textarea {
+  outline: none;
+  border: solid 1px #ecb0da;
+}
+
+.cleft {
+  color: #ecb0da;
+  height: 200px;
+}
+
+.row h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+  color: #7c7c7e;
+}
+
+.cleft p {
+  color: #ecb0da;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.btn {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  padding: 5px;
+  color: #7c7c7e;
+  background-color: #ecb0da;
+}
+
+#area {
+  width: 280px;
+}
+
+.talles {
+  height: 300px;
+  padding: 10px;
+}
+
+.tcontenedor {
+  padding: 10px;
+}
+
+.italles {
+  width: 300px;
+}
+
+.tabla {
+  border: double 5px #ecb0da;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: #7c7c7e;
+  justify-content: center;
+  width: 300px;
+  padding-bottom: 30px;
+}
+
+.tabla th {
+  padding: 5px;
+}
+
+.tabla td {
+  padding: 5px;
+}
+
+.carousel-item {
+  height: 400px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 480px) {
+  .productosDestacados {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 10px;
+  }
+  .cright input {
+    width: 400px;
+  }
+  #area {
+    width: 400px;
+  }
+  .talles {
+    height: 400px;
+  }
+  .italles {
+    width: 400px;
+  }
+  .tcontenedor {
+    margin-left: 50px;
+  }
+  .carousel-item {
+    height: 650px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .imagenPrincipal h1 {
+    font-size: 80px;
+  }
+  .informacion {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+  }
+  .navegacionProductos a {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  .productosDestacados {
+    height: 340px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 300px);
+    grid-gap: 15px;
+  }
+  .cright input {
+    width: 600px;
+  }
+  #area {
+    width: 600px;
+  }
+  .talles {
+    height: 500px;
+  }
+  .italles {
+    width: 500px;
+    margin-left: 350px;
+  }
+  .tcontenedor {
+    margin-left: 400px;
+  }
+  .tabla {
+    font-size: 20px;
+    width: 400px;
+  }
+  .list-group {
+    height: 440px;
+  }
+  .carousel-inner {
+    height: 550px;
+    width: 400px;
+    margin-left: 450px;
+  }
+  .carousel-item img {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
