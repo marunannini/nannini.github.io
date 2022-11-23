@@ -24,7 +24,7 @@ li {
 }
 
 .imagenPrincipal {
-  background-image: url(imagenes/01-091422-INTL-Homepage-Costume.jpg);
+  background-image: url(./Imagenes/01-091422-INTL-Homepage-Costume.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -95,7 +95,7 @@ p {
 }
 
 .conjuntos {
-  background-image: url("Imagenes/conjuntos.jpg");
+  background-image: url("./Imagenes/conjuntos.jpg");
   background-size: cover;
   background-position: center;
   border: 2px solid white;
@@ -103,7 +103,7 @@ p {
 }
 
 .pijamas {
-  background-image: url("Imagenes/pijamas.jpg");
+  background-image: url("./Imagenes/pijamas.jpg");
   background-size: cover;
   background-position: center;
   border: 2px solid white;
@@ -111,7 +111,7 @@ p {
 }
 
 .bombachas {
-  background-image: url("Imagenes/bombachas.jpg");
+  background-image: url("./Imagenes/bombachas.jpg");
   background-size: cover;
   background-position: center;
   border: 2px solid white;
@@ -119,7 +119,7 @@ p {
 }
 
 .trajesBano {
-  background-image: url("Imagenes/trajesBano.jpg");
+  background-image: url("./Imagenes/trajesBano.jpg");
   background-size: cover;
   background-position: center;
   border: 2px solid white;

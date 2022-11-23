@@ -24,7 +24,7 @@ li{
 }
 
 .imagenPrincipal{
-    background-image: url(imagenes/01-091422-INTL-Homepage-Costume.jpg);
+    background-image: url(./Imagenes/01-091422-INTL-Homepage-Costume.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -98,7 +98,7 @@ p{
 
 @each $prod in conjuntos, pijamas, bombachas, trajesBano {
     .#{$prod} {
-        background-image: url("Imagenes/#{$prod}.jpg");
+        background-image: url("./Imagenes/#{$prod}.jpg");
         background-size: cover;
         background-position: center;
         border: 2px solid white;
