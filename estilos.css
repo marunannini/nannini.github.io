@@ -4,33 +4,23 @@
   box-sizing: border-box;
 }
 
-header {
-  height: 60px;
-  width: 100%;
+.navbar {
+  background-color: #c9ada7;
   font-family: "Lato", sans-serif;
-  font-size: 10px;
-  padding-top: 10%;
 }
 
-.logo {
-  float: left;
+.navbar-brand {
+  font-family: "Sacramento", cursive;
+  font-size: 25px;
+  text-shadow: 0 0 5px black;
 }
 
-ul {
-  list-style: none;
-}
-
-.navegacionPrincipal a {
-  text-decoration: none;
-  color: #ecb0da;
+.navbar-nav {
+  font-family: "Lato", sans-serif;
 }
 
 li {
   display: inline-block;
-}
-
-.navegacionPrincipal {
-  float: right;
 }
 
 .imagenPrincipal {
@@ -82,7 +72,7 @@ p {
 }
 
 .navegacionProductos {
-  background-color: #ecb0da;
+  background-color: #c9ada7;
   padding: 10px;
   text-align: center;
   overflow: hidden;
@@ -154,8 +144,8 @@ p {
 
 footer {
   top: 10px;
-  background-color: #ecb0da;
-  height: 70px;
+  background-color: #c9ada7;
+  height: 95px;
   padding: 10px;
   text-align: center;
 }
@@ -163,19 +153,26 @@ footer {
 footer h2 {
   font-family: "Lato", sans-serif;
   color: white;
-  text-transform: uppercase;
   font-size: 15px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:active {
+  color: #7c7c7e;
 }
 
 .redesSociales {
   font-size: 20px;
   letter-spacing: 5px;
-  padding: 5px;
+  padding-bottom: 6px;
   color: white;
 }
 
 .titulo {
-  font-family: "Sacramento", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 50px;
   color: #7c7c7e;
   text-align: center;
@@ -248,27 +245,122 @@ hr {
   width: 300px;
 }
 
-.tabla {
-  border: double 5px #ecb0da;
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-  color: #7c7c7e;
-  justify-content: center;
-  width: 300px;
-  padding-bottom: 30px;
-}
-
-.tabla th {
-  padding: 5px;
-}
-
-.tabla td {
-  padding: 5px;
-}
-
 .carousel-item {
   height: 400px;
   padding-bottom: 10px;
+}
+
+.galeria {
+  height: 1300px;
+  display: grid;
+  grid-template-columns: repeat(2, 145px);
+  grid-template-rows: repeat(8, 200px);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.producto1 {
+  background-image: url(./Imagenes/bombacha1.jpg);
+  background-size: cover;
+  background-position: center;
+  border: double 2px #ecb0da;
+}
+
+.producto2 {
+  background-image: url(./Imagenes/bombacha2.jpg);
+  background-size: cover;
+  background-position: center;
+  border: double 2px #ecb0da;
+}
+
+.producto3 {
+  background-image: url(./Imagenes/bombacha3.jpg);
+  background-size: cover;
+  background-position: center;
+  border: double 2px #ecb0da;
+}
+
+.producto4 {
+  background-image: url(./Imagenes/pijama1.jpg);
+  background-size: cover;
+  background-position: center;
+  border: double 2px #ecb0da;
+}
+
+.producto5 {
+  background-image: url(./Imagenes/pijama2.jpg);
+  background-size: cover;
+  background-position: center;
+  border: double 2px #ecb0da;
+}
+
+.producto6 {
+  background-image: url(./Imagenes/trajebano1.jpg);
+  background-size: cover;
+  background-position: center;
+  border: double 2px #ecb0da;
+}
+
+.producto7 {
+  background-image: url(./Imagenes/trajebano2.jpg);
+  background-size: cover;
+  background-position: center;
+  border: double 2px #ecb0da;
+}
+
+.producto8 {
+  background-image: url(./Imagenes/trajebano3.jpg);
+  background-size: cover;
+  background-position: center;
+  border: double 2px #ecb0da;
+}
+
+.producto9 {
+  background-image: url(./Imagenes/trajebano4.jpg);
+  background-size: cover;
+  background-position: center;
+  border: double 2px #ecb0da;
+}
+
+.producto10 {
+  background-image: url(./Imagenes/conjunto1.jpg);
+  background-size: cover;
+  background-position: center;
+  border: double 2px #ecb0da;
+}
+
+.producto11 {
+  background-image: url(./Imagenes/conjunto2.jpg);
+  background-size: cover;
+  background-position: center;
+  border: double 2px #ecb0da;
+}
+
+.producto12 {
+  background-image: url(./Imagenes/corpino1.jpg);
+  background-size: cover;
+  background-position: center;
+  border: double 2px #ecb0da;
+}
+
+.whats {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(18, 187, 18);
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 0 5px black;
+}
+
+.whats i {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin-left: 2px;
+  margin-bottom: 1px;
 }
 
 @media only screen and (min-width: 480px) {
@@ -280,10 +372,10 @@ hr {
     grid-gap: 10px;
   }
   .cright input {
-    width: 400px;
+    width: 430px;
   }
   #area {
-    width: 400px;
+    width: 430px;
   }
   .talles {
     height: 400px;
@@ -296,6 +388,14 @@ hr {
   }
   .carousel-item {
     height: 650px;
+  }
+  .galeria {
+    height: 1600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 250px);
+    grid-gap: 10px;
+    padding: 10px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -345,8 +445,8 @@ hr {
     font-size: 20px;
     width: 400px;
   }
-  .list-group {
-    height: 440px;
+  .list-group li {
+    height: 80px;
   }
   .carousel-inner {
     height: 550px;
@@ -356,6 +456,14 @@ hr {
   .carousel-item img {
     background-size: cover;
     background-position: center;
+  }
+  .galeria {
+    height: 1700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 400px);
+    grid-gap: 15px;
+    padding: 15px;
   }
 }
 
